@@ -1,0 +1,18 @@
+.container{
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; 
+    flex-wrap: wrap;
+}
+:global(.min_height){ /* O :global impede a renomeação */
+    height: 80vh;
+}
+
+:global(.start){
+    justify-content: flex-start;
+}
+:global(.column){
+    flex-direction: column;
+    justify-content: flex-start;
+}

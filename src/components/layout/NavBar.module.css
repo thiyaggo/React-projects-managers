@@ -1,0 +1,26 @@
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background:  #0e4de0;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.item a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.item a:hover{
+    border-bottom: 1px solid #fff;
+}
