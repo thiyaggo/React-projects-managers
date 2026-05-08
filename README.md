@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+## Gerenciador de Projetos ainda em desenvolvimento
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação desenvolvida em React para gerenciamento de projetos, permitindo criar, visualizar e organizar projetos por categorias.
 
-## Available Scripts
+<div align="center">
+<img src="src/img/projeto1.png" width="700px" />
+</div>
 
-In the project directory, you can run:
+## 🚀 Tecnologias utilizadas
 
-### `npm start`
+React
+React Router DOM
+React Icons
+CSS Modules
+JSON Server (db.json) para simulação de banco de dados
+UUID para geração de identificadores únicos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📁 Estrutura do projeto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O projeto foi dividido em componentes para facilitar a organização e manutenção da aplicação:
+Form → componentes relacionados aos formulários
+Layout → estrutura visual da aplicação
+Pages → páginas principais do sistema
+Projeto → componentes responsáveis pelos projetos
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📌 Funcionalidades
 
-### `npm run build`
+Criar projetos
+Definir categorias para cada projeto
+Navegação entre páginas utilizando React Router DOM
+Armazenamento dos dados em um banco fake com db.json
+Interface componentizada e organizada
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🗂 Banco de dados
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Foi utilizado o db.json como banco de dados fake através do JSON Server.
+O sistema possui duas listas principais:
 
-### `npm run eject`
+Categorias: Previamente definidas para classificação dos projetos.
+Exemplos: Desenvolvimento, Design, Infraestrutura, Planejamento
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Projetos: Lista onde ficam armazenados os projetos criados pelo usuário.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Imagem da parte da criação
+<div align="center">
+<img src="src/img/projeto2.png" width="700px" />
+</div>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Imagem dos projetos sendo listados
+<div align="center">
+<img src="src/img/projeto5.png" width="700px" />
+</div>
+## ▶️ Como executar o projeto
+Clone o repositório:
+git clone <https://github.com/thiyaggo/React-projects-managers.git>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Entre na pasta do projeto:
+cd nome-do-projeto
 
-## Learn More
+Instale as dependências:
+npm install json-server react react-dom react-icons react-router-dom react-scripts uuid web-vitals
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Inicie o projeto React:
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Inicie o JSON Server:
+npm run backend
 
-### Code Splitting
+🛠 Dependências principais
+react-router-domjson-server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📷 Interface
+O sistema possui uma interface simples e organizada para facilitar o gerenciamento dos projetos.
 
-### Analyzing the Bundle Size
+## 📄 Objetivo do projeto
+Este projeto foi desenvolvido com o objetivo de praticar e aprender:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+--Componentização no React
+--Gerenciamento de rotas
+--Manipulação de formulários
+--Consumo de API fake com JSON Server
+--Organização de estrutura de projetos React
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## lembrandoque esse projeto ainda está em desenvolvimento e será atualizado futuramente

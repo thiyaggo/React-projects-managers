@@ -6,7 +6,7 @@
     flex-wrap: wrap;
 }
 :global(.min_height){ /* O :global impede a renomeação */
-    height: 80vh;
+    height: 100vh;
 }
 
 :global(.start){
