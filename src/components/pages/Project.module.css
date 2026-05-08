@@ -1,7 +1,16 @@
 .project_container{
-    padding: 1em;
+    width: 100%;
+    background-color: #fff;
 }
 .title_container{
     display: flex;
     justify-content: space-between;
+    margin: 1rem 1rem;
+}
+.container_card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-left: 3rem;
+    justify-content: flex-start;
 }

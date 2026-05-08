@@ -1,6 +1,6 @@
 .menssagem{
-    width: 100%;
-    padding: 15px 20px;
+    width: 30%;
+    padding: 10px 20px;
     margin: 0 auto;
     border-radius: 10px;
     text-align: center;
@@ -9,7 +9,7 @@
 
 .sucsses{
     color: #fff;
-    background-color: green;
+    background-color: rgb(19, 184, 19);
     font-size: 17px;
     font-weight: 500;
 }

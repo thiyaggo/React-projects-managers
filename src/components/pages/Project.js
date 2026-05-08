@@ -33,11 +33,11 @@ function Project(){
     return (
         <div className={styles.project_container}>
             <div className={styles.title_container}>
-                <h1>ola mundo</h1>
+                <h1>Seus projetos</h1>
+                  {message && <Messagens msg={message} type="sucsses"/>}
                 <LinkButtom to="/newproject" text="Criar novo projeto"/>
             </div>
-            {message && <Messagens msg={message} type="sucsses"/>}
-            <Container>
+            <div className={styles.container_card}>
                {projects.length > 0 && //verifica se o array tem elementos
                 projects.map((project)=> //percorre projects onde project representa cada array no momento do lop
                     <ProjectCard //“Para cada projeto do array, crie um ProjectCard.”
@@ -48,7 +48,7 @@ function Project(){
                     key={project.id}
                     />)
                }
-            </Container>
+            </div>
         </div>
        
     )
