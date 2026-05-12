@@ -1,5 +1,5 @@
 import Messagens from "../layout/Messagens";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import styles from './Project.module.css';
 import LinkButtom from '../layout/LinkButtom';
 import Container from '../layout/Container';
@@ -8,14 +8,26 @@ import {useState, useEffect} from 'react';
 function Project(){
 
     const [projects, setProjects] = useState([]);
-
     const location = useLocation();
-    let message = '';
 
-    if(location.state){
-        message = location.state.msg;
-    }
+    const [message, setMessage] = useState('');
+    const [messageDelete, setMessageDelete] = useState('');
 
+
+
+useEffect(() => {
+
+  if (location.state?.msg) {
+
+    setMessage(location.state.msg);
+
+    window.history.replaceState({}, document.title);
+
+  }
+
+}, [location.state]);
+
+   
 //-----> reqisitando os dados da api pra exibir
     useEffect(()=>{
         fetch('http://localhost:5000/projects',{
@@ -30,11 +42,27 @@ function Project(){
           })
     }, [])
 
+    function removeProject(id) {
+        fetch(`http://localhost:5000/projects/${id}`,{
+            method: 'DELETE',
+            headers:{
+                'Content-Type': 'application/json'
+            },
+        })
+        .then(res => res.json())
+        .then(() => {
+            setProjects(projects.filter((project)=> project.id !== id))
+            setMessageDelete('projeto excluido com sucesso!')
+        })
+        .catch((err)=> console.log(err))
+    }
+
     return (
         <div className={styles.project_container}>
             <div className={styles.title_container}>
                 <h1>Seus projetos</h1>
-                  {message && <Messagens msg={message} type="sucsses"/>}
+                  <Messagens  msg={message} type="success"/>
+                {messageDelete && <Messagens  msg={messageDelete} type="success"/>}
                 <LinkButtom to="/newproject" text="Criar novo projeto"/>
             </div>
             <div className={styles.container_card}>
@@ -46,6 +74,7 @@ function Project(){
                     budget={project.budget}
                     category={project.category.name}
                     key={project.id}
+                    handleRemove={removeProject}
                     />)
                }
             </div>

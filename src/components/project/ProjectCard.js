@@ -1,6 +1,12 @@
 import styles from './ProjectCard.module.css'
 import { Link } from "react-router-dom";
 function ProjectCard({id, name, budget, category, handleRemove}){
+
+    const remove = (e) =>{ //evento pra não atualizar a página
+        e.preventDefault()
+        handleRemove(id)
+    }
+
     return (
         <div className={styles.project_card}>
             <div className={styles.titulo}>
@@ -15,8 +21,10 @@ function ProjectCard({id, name, budget, category, handleRemove}){
                 </p>
             </div>
             <div className={styles.button}>
-                <Link to='/' className={styles.delete}>Delete</Link>
-                <Link to='/' className={styles.alterar}>Editar</Link>
+                <Link to='/' className={styles.alterar}>alterar</Link>
+                 <button onClick={remove} className={styles.delete}>
+                    Delete
+                </button>
             </div>
         </div>
     );

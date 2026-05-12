@@ -52,6 +52,7 @@ Projetos: Lista onde ficam armazenados os projetos criados pelo usuário.
 <div align="center">
 <img src="src/img/projeto5.png" width="700px" />
 </div>
+
 ## ▶️ Como executar o projeto
 Clone o repositório:
 git clone <https://github.com/thiyaggo/React-projects-managers.git>
