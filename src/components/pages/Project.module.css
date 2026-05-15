@@ -14,3 +14,25 @@
     margin-left: 3rem;
     justify-content: flex-start;
 }
+.project_msg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(245, 245, 220, 0.804);
+    font-size: 20px; 
+}
+.project_msg p{
+    margin-top: 12px;
+}
+.img_projeto{
+    margin-top: 20px;
+    width: 100%;
+    height: 550px;
+    background-image: url(../../img/projeto.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    border-radius: 5px;
+}

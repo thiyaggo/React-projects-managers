@@ -29,11 +29,11 @@ function ProjectForms({handleSubmit, projectData, BtnText}) {
 //--> faz o envio do dados do inputs para a pasta newPrject executando a função creatPost
   const submit = (e)=>{ 
     e.preventDefault()
-    //console.log(project)
-    handleSubmit(project)// envias os dados como argumento pela props handleSubmit 
+ // ---> envias os dados como argumento pela props handleSubmit pra pasta NewProject
+    handleSubmit(project)
   }
 
-  //--> atualizar o estado dos inputs e select em tempo real
+//--> atualizar o estado dos inputs e select em tempo real
   function handleChange(e){
     setProject({...project,[e.target.name]:e.target.value})
   }
@@ -73,7 +73,7 @@ function ProjectForms({handleSubmit, projectData, BtnText}) {
         handleOnChange={handleChange}
         value={project.budget ? project.budget : ''}
         />        
-        <SubmitButtom text={BtnText}/>
+        <SubmitButtom text={BtnText}/> 
       </form>
      
     );

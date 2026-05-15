@@ -1,28 +1,5 @@
 {
-  "projects": [
-    {
-      "name": "thiago ",
-      "category": {
-        "id": "2",
-        "name": "Marketing"
-      },
-      "budget": "45641",
-      "corts": 0,
-      "service": [],
-      "id": "TCZNZCJOd6g"
-    },
-    {
-      "name": "progamar site",
-      "category": {
-        "id": "2",
-        "name": "Marketing"
-      },
-      "budget": "654954",
-      "corts": 0,
-      "service": [],
-      "id": "Bbrk_9x4Jc0"
-    }
-  ],
+  "projects": [],
   "categoria": [
     {
       "id": "1",

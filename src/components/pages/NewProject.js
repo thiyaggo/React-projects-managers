@@ -12,7 +12,7 @@ function NewProject(){
         project.service =[];
 
         fetch('http://localhost:5000/projects', {
-            method:'Post',
+            method:'POST',
             headers: {'Content-type': 'application/json'
             },
             body: JSON.stringify(project),

@@ -21,7 +21,7 @@ function ProjectCard({id, name, budget, category, handleRemove}){
                 </p>
             </div>
             <div className={styles.button}>
-                <Link to='/' className={styles.alterar}>alterar</Link>
+                <Link to={`/projectEdit/${id}`} className={styles.alterar}>alterar</Link>
                  <button onClick={remove} className={styles.delete}>
                     Delete
                 </button>

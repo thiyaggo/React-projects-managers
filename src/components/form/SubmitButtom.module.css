@@ -1,5 +1,9 @@
+.btn_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .btn{
-    width: 20%;
     margin-top: 20px;
     padding: 10px 20px;
     color: #fff;

@@ -13,6 +13,8 @@
     justify-content: flex-start;
 }
 :global(.column){
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    background-color: #fff;
 }

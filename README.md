@@ -48,9 +48,29 @@ Projetos: Lista onde ficam armazenados os projetos criados pelo usuário.
 <img src="src/img/projeto2.png" width="700px" />
 </div>
 
+## Imagem da pagina project sem projeto
+<div align="center">
+<img src="src/img/projeto12.png" width="700px" />
+</div>
+
 ## Imagem dos projetos sendo listados
 <div align="center">
 <img src="src/img/projeto5.png" width="700px" />
+</div>
+
+## Imagem das informações do projeto
+<div align="center">
+<img src="src/img/projeto6.png" width="700px" />
+</div>
+
+## Imagem da edição do projeto com menssagem
+<div align="center">
+<img src="src/img/projeto8.png" width="700px" />
+</div>
+
+## Imagem dos projetos sendo alterado
+<div align="center">
+<img src="src/img/projeto11.png" width="700px" />
 </div>
 
 ## ▶️ Como executar o projeto

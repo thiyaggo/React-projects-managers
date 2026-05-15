@@ -1,9 +1,8 @@
-import { PiButterflyDuotone } from 'react-icons/pi';
 import styles from './SubmitButtom.module.css';
 
 function SubmitButtom({text}){
     return (
-        <div>
+        <div className={styles.btn_div}>
            <button className={styles.btn}>{text}</button>   
         </div>
     );
